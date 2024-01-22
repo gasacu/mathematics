@@ -28,13 +28,13 @@ body {
         }
             .MainTitle {
                 font-size: 3rem;
-                line-height: 3rem;
-                padding-bottom: 5rem;
+                line-height: 2rem;
+                padding-bottom: 4rem;
             }
             .MainAuthor {
                 font-size: 1.4rem;
                 font-weight: 300;
-                padding-bottom: 3rem;
+                padding-bottom: 2rem;
             }
                 .MainAuthor span {
                     padding-left: 0.5rem;
@@ -72,16 +72,21 @@ body {
                         .ResourceItem:hover {
                             background: rgba(255, 190, 152, 0.493);
                         }
+                        .ResourceItem span {
+                            font-size: 0.8rem;
+                            font-weight: 500;
+                        }
         footer {
             display: block;
             clear: both;
             font-size: 0.9rem;
-            border-top: 1px solid white;
+            border-top: 1px solid peachpuff;
             width: 80vw;
             margin: 0 auto;
-            padding: 0;
-            margin-top: 3rem;
+            padding: 1rem;
+            margin-top: 2rem;
         }
             p {
                 text-align: center;
+                color: peachpuff;
             }
