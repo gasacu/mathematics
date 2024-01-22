@@ -7,6 +7,7 @@ html {
     font-family: 'Oxygen', sans-serif;
     font-size: 16px;
     line-height: 1.5em;
+    min-height: 100%;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
     place-items: center;
     padding: 0;
     margin: 0;
+    min-height: 100%;
 }
     /*MAIN Page*/
     .AppWrapper {
@@ -80,7 +82,7 @@ body {
             display: block;
             clear: both;
             font-size: 0.9rem;
-            border-top: 1px solid peachpuff;
+            border-top: 1px solid rgba(255, 218, 185, 0.546);
             width: 80vw;
             margin: 0 auto;
             padding: 1rem;
