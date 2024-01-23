@@ -104,14 +104,19 @@ body {
 
 /* MATERIALS Page */
 .MaterialsContainer {
-
+    background: rgba(150, 150, 150, 0.461);
+    height: 100vh;
 }
     .MaterialsHeader {
         
     }
-        .MaterialsNavbar {
-        
-
+        .MaterialsHeaderNav{
+            display: flex;
+            position: sticky;
+            top: 0;
+            height: 9rem;
+            background: rgba(205, 205, 205, 0.416);
+            box-shadow: 0 1em 1em rgba(0, 0, 0, 0.3);
         }
             .NavLeft {
                 
@@ -122,8 +127,21 @@ body {
                 .NavLeftTitleTwo {
                     
                 }
+            .NavRightTrigger {
+                display: block;
+                margin: 0;
+                padding: 0.375rem;
+                background: transparent;
+                border: none;
+                appearance: none;
+            }
+                .NavRightTriggerImage {
+                    display: block;
+                    width: 2rem;
+                    height: 2rem;
+                }
             .NavRight {
-        
+                display: none;
             }
                 .NavRightList {
         
@@ -131,13 +149,22 @@ body {
                     .NavRightListItem {
         
                     }
-        .MaterialsHeaderTitle {
-            
-        }
+                        .NavRightLink {
+
+                        }
+                        .NavRightSubList {
+
+                        }
+                            .NavRightSubListItem {
+
+                            }
 
     .MaterialsMain {
 
     }
+        .MaterialsMainTitle {
+                
+        }
         .MaterialsMainImage {
         
         }
