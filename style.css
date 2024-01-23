@@ -1,55 +1,54 @@
 html {
-    margin: 0;
-    padding: 0;
-    background: rgba(255, 255, 255, 0.776) url(./images/background.jpg) center center no-repeat;
-    background-size: cover;
-    color: rgb(255, 255, 255);
     font-family: 'Oxygen', sans-serif;
     font-size: 16px;
-    line-height: 1.5em;  
+    line-height: 1.5em;
+}
+
+body {
+    display: block;
+    min-height: 100vh;
+    margin: 0;
+    text-rendering: optimizeSpeed;
+    background: black url(./images/background.jpg) center center no-repeat;
+    background-size: cover;  
+    color: rgb(255, 255, 255);
 }
 
 /*MAIN Page*/
-body {
-    display: block;
-    place-items: center;
-    margin: 0;
-   
-}
-    header {  }
-    .AppWrapper {
-        display: block;
-        margin: 0;
-        padding: 0;
+    .MainContainer {
+        
     }
-        .MainContent {
-            padding-top: 3rem;
-            text-align: center; 
+        .MainHeader {
+            
         }
-            .MainTitle {
-                font-size: 3rem;
-                line-height: 2rem;
-                padding-bottom: 4rem;
+            .MainContent {
+                padding-top: 3rem;
+                text-align: center; 
             }
-            .MainAuthor {
-                font-size: 1.4rem;
-                font-weight: 300;
-                padding-bottom: 3rem;
-            }
-                .MainAuthor span {
-                    padding-left: 0.5rem;
-                    font-style: italic;
+                .MainTitle {
+                    font-size: 3rem;
+                    line-height: 2rem;
+                    padding-bottom: 4rem;
                 }
-        main {
+                .MainAuthor {
+                    font-size: 1.4rem;
+                    font-weight: 300;
+                    padding-bottom: 3rem;
+                }
+                    .MainAuthor span {
+                        padding-left: 0.5rem;
+                        font-style: italic;
+                    }
+        .MainMain {
             clear: both;
         }        
-            .Resource {
+            .MainResource {
                 display: block;
                 margin: auto;
                 padding: 0;
             }
             
-                .ResourceList {
+                .MainResourceList {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -61,14 +60,15 @@ body {
                     text-decoration: none;
                     max-width: 900px;
                 }
-                @media (min-width: 1000px) { .ResourceList { flex-direction: row; align-items: center; justify-content: center; margin: 0 auto;}}
-                    .ResourceLink {
+                @media (min-width: 1080px) { .MainResourceList { flex-direction: row; align-items: center; justify-content: center; margin: 0 auto;}}
+                    
+                    .MainResourceLink {
                         display: block;
                         text-decoration: none;
                         width: fit-content;
                         padding: 0 1.5rem;
                     }
-                        .ResourceItem {
+                        .MainResourceItem {
                             margin-bottom: 3rem;
                             background: rgb(255, 190, 152);
                             color: white;
@@ -78,27 +78,77 @@ body {
                             text-transform: uppercase;
                             font-weight: 900;
                         }
-                        .ResourceItem:hover {
+                        .MainResourceItem:hover {
                             background: rgba(255, 190, 152, 0.493);
                         }
-                        .ResourceItem span {
+                        .MainResourceItem span {
                             font-size: 0.8rem;
                             font-weight: 500;
                         }
-        footer {
+        .MainFooter {
             display: block;
             clear: both;
             margin-top: 2rem;
-            border-top: 1px solid rgba(255, 218, 185, 0.571);
-            text-align: center;
+            border-top: 1px solid rgba(255, 218, 185, 0.432);
+            width: 80vw;
+            margin: 0 auto;
         }               
            .FooterText {
                 color: peachpuff;
-                font-size: 0.9rem;
+                font-size: 0.8rem;
                 font-weight: 300;
-                margin: 0 auto;
-                padding: 1.5rem;
-            }
+                padding: 1rem 0;
+                text-align: center;
+            }   
 
 
 /* MATERIALS Page */
+.MaterialsContainer {
+
+}
+    .MaterialsHeader {
+        
+    }
+        .MaterialsNavbar {
+        
+
+        }
+            .NavLeft {
+                
+            }
+                .NavLeftTitleOne {
+                    
+                }
+                .NavLeftTitleTwo {
+                    
+                }
+            .NavRight {
+        
+            }
+                .NavRightList {
+        
+                }
+                    .NavRightListItem {
+        
+                    }
+        .MaterialsHeaderTitle {
+            
+        }
+
+    .MaterialsMain {
+
+    }
+        .MaterialsMainImage {
+        
+        }
+
+    .MaterialsFooter {
+
+    }
+        .MaterialsFooterText {
+            
+        }
+
+
+
+
