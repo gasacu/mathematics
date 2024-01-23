@@ -6,19 +6,17 @@ html {
     color: rgb(255, 255, 255);
     font-family: 'Oxygen', sans-serif;
     font-size: 16px;
-    line-height: 1.5em;
-    min-height: 100%;
+    line-height: 1.5em;  
 }
 
+/*MAIN Page*/
 body {
-    display: flex;
-    justify-content: center;
+    display: block;
     place-items: center;
-    padding: 0;
     margin: 0;
-    min-height: 100%;
+   
 }
-    /*MAIN Page*/
+    header {  }
     .AppWrapper {
         display: block;
         margin: 0;
@@ -36,30 +34,39 @@ body {
             .MainAuthor {
                 font-size: 1.4rem;
                 font-weight: 300;
-                padding-bottom: 2rem;
+                padding-bottom: 3rem;
             }
                 .MainAuthor span {
                     padding-left: 0.5rem;
                     font-style: italic;
                 }
+        main {
+            clear: both;
+        }        
             .Resource {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                display: block;
                 margin: auto;
                 padding: 0;
             }
+            
                 .ResourceList {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
                     margin: 0;
                     padding: 0;
                     font-size: 1.2rem;
                     text-decoration: none;
+                    max-width: 900px;
                 }
+                @media (min-width: 1000px) { .ResourceList { flex-direction: row; align-items: center; justify-content: center; margin: 0 auto;}}
                     .ResourceLink {
                         display: block;
                         text-decoration: none;
                         width: fit-content;
-                        
+                        padding: 0 1.5rem;
                     }
                         .ResourceItem {
                             margin-bottom: 3rem;
@@ -81,16 +88,17 @@ body {
         footer {
             display: block;
             clear: both;
-            font-size: 0.9rem;
-            border-top: 1px solid rgba(255, 218, 185, 0.546);
-            width: 80vw;
-            margin: 0 auto;
-            padding: 1rem;
             margin-top: 2rem;
-        }
-            p {
-                text-align: center;
+            border-top: 1px solid rgba(255, 218, 185, 0.571);
+            text-align: center;
+        }               
+           .FooterText {
                 color: peachpuff;
+                font-size: 0.9rem;
+                font-weight: 300;
+                margin: 0 auto;
+                padding: 1.5rem;
             }
 
-    /* MATERIALE Page */
+
+/* MATERIALS Page */
