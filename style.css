@@ -26,15 +26,15 @@ body {
                 text-align: center; 
             }
                 .MainTitle {
-                    font-size: 3rem;
-                    line-height: 2rem;
                     padding-bottom: 4rem;
                 }
+                @media (min-width: 1024px) { .MainTitle { width: clamp(300px, 22vw, 20rem); height: clamp(200px, 12vw, 18rem);} }
                 .MainAuthor {
-                    font-size: 1.4rem;
+                    font-size: 1rem;
                     font-weight: 300;
                     padding-bottom: 3rem;
                 }
+                @media (min-width: 1024px) { .MainAuthor { font-size: 1.4rem; } }
                     .MainAuthor span {
                         padding-left: 0.5rem;
                         font-style: italic;
@@ -54,13 +54,13 @@ body {
                     align-items: center;
                     justify-content: center;
                     flex-wrap: wrap;
-                    margin: 0;
+                    margin: 0 auto;
                     padding: 0;
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     text-decoration: none;
                     max-width: 900px;
                 }
-                @media (min-width: 1080px) { .MainResourceList { flex-direction: row; align-items: center; justify-content: center; margin: 0 auto;}}
+                @media (min-width: 1080px) { .MainResourceList { flex-direction: row; align-items: center; justify-content: center; font-size: 1.2rem; margin: 0 auto;}}
                     
                     .MainResourceLink {
                         display: block;
@@ -82,9 +82,10 @@ body {
                             background: rgba(255, 190, 152, 0.493);
                         }
                         .MainResourceItem span {
-                            font-size: 0.8rem;
+                            font-size: 0.7rem;
                             font-weight: 500;
                         }
+                        @media (min-width: 1080px) { .MainResourceItem span{ font-size: 0.8rem; } }
         .MainFooter {
             display: block;
             clear: both;
@@ -100,6 +101,7 @@ body {
                 padding: 1rem 0;
                 text-align: center;
             }   
+            @media (min-width: 1024px) { .FooterText { font-size: 1rem; } }
 
 
 /* MATERIALS Page */
@@ -108,29 +110,38 @@ body {
     height: 100vh;
 }
     .MaterialsHeader {
-        
+        margin: 0;
+        padding: 0;
     }
         .MaterialsHeaderNav{
             display: flex;
             position: sticky;
+            flex-direction: column;
             top: 0;
-            height: 9rem;
+            height: fit-content;
             background: rgba(205, 205, 205, 0.416);
             box-shadow: 0 1em 1em rgba(0, 0, 0, 0.3);
         }
             .NavLeft {
-                
+                padding: 1rem 1.5rem;
+                max-width: 210px;
             }
                 .NavLeftTitleOne {
-                    
+                    padding: 0;
+                    font-size: 1rem;
+                    font-weight: 900;
+                    text-decoration: none;
                 }
                 .NavLeftTitleTwo {
-                    
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                    color: #ffffff;
                 }
+                
             .NavRightTrigger {
                 display: block;
                 margin: 0;
-                padding: 0.375rem;
+                padding: 1rem 1.5rem;
                 background: transparent;
                 border: none;
                 appearance: none;
@@ -141,23 +152,51 @@ body {
                     height: 2rem;
                 }
             .NavRight {
-                display: none;
+                
+                position: absolute;
+                top: 12.6rem;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                height: calc(100vh - 15rem);
+                background: #eee;
+                padding: 1rem 0;
             }
+            .NavRightTrigger:active + .NavRight, .NavRightTrigger:focus + .NavRight { display: block;}
                 .NavRightList {
-        
+                    display: block;
+                    padding: 0;
+                    margin: 0;
                 }
                     .NavRightListItem {
-        
+                        display: block;
                     }
-                        .NavRightLink {
-
+                        .NavRightListItemLink {
+                            display: block;
+                            padding: 0.5em 1em;
+                            background: transparent;
+                            font-size: 1em;
+                            font-weight: 700;
+                            text-decoration: none;
+                        }
+                        .NavRightListItemLink:hover {
+                            color: rgb(255, 190, 152);
+                            background: rgb(255, 255, 255); 
                         }
                         .NavRightSubList {
-
+                            display: block;
+                            padding: 0;
+                            margin: 0;
                         }
                             .NavRightSubListItem {
-
+                                display: block;
                             }
+                                .NavRightSubListItemLink {
+                                    display: block;
+                                    padding: 0.75em 1.5em;
+                                    background: transparent;
+                                    text-decoration: none;
+                                }
 
     .MaterialsMain {
 
