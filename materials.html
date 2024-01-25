@@ -15,8 +15,8 @@
             <meta property="og:image" content="images/og-image.png">
             <meta property="og:image:width" content="1200">
             <meta property="og:image:height" content="630">
-            <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-color.png" />
-            <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-color.png" />
+            <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-white.png" />
+            <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-white.png" />
             <link rel="stylesheet" href="style.css">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,13 +29,19 @@
             <header class="MaterialsHeader">
                 <div class="MaterialsHeaderNav">
                     <div class="NavLeft">
-                        <a href="#" class="NavLeftTitleOne" title="Înapoi la pagina principală">BIBLIOTECĂ PERSONALĂ DE RESURSE MATEMATICE</a> 
-                        <h4 class="NavLeftTitleTwo">AUTOR: Prof. Cristina Dinescu</h4>
+                        <a href="#" title="Înapoi la pagina principală">
+                            <img src="images/home-materials.png" class="NavLeftImage" width="44" height="44">
+                            <p class="NavLeftTitleOne">BIBLIOTECĂ PERSONALĂ DE RESURSE MATEMATICE</p>
+                        </a>
+                        <div class="NavLeftTitleTwo">
+                            <img src="images/author.png" width="23" height="23">
+                            <h4>Prof. <span>Cristina Dinescu</span></h4>
+                        </div>
                     </div>
-                    <button class="NavRightTrigger">
+                    <button class="NavRightTrigger" id="navTrigger">
                         <img src="images/menu-trigger.png" alt="Deschide meniul" class="NavRightTriggerImage" width="32" height="32">
                     </button>
-                    <nav class="NavRight">
+                    <nav class="NavRight" id="navMenu">
                         <ul class="NavRightList">
                             <li class="NavRightListItem">
                                 <a href="#gimnaziu" class="NavRightListItemLink"><h3>Nivel gimnazial</h3></a>
@@ -63,12 +69,13 @@
             <main class="MaterialsMain">
             <!--    <h1 class="MaterialsMainTitle">Resurse utile</h1>
                 <img src="" class="MaterialsMainImage" alt="Caută resursele acum"> -->
+                 
             </main> 
     
             <footer class="MaterialsFooter">
             <!--    <p class="MaterialsFooterText">Bibliotecă personală de resurse matematice.</p> -->
             </footer>
         </div>
-        
+        <script defer src="script.js"></script>
     </body>
 </html>

@@ -106,8 +106,7 @@ body {
 
 /* MATERIALS Page */
 .MaterialsContainer {
-    background: rgba(150, 150, 150, 0.461);
-    height: 100vh;
+    background: rgba(150, 150, 150, 0.18);
 }
     .MaterialsHeader {
         margin: 0;
@@ -118,30 +117,48 @@ body {
             position: sticky;
             flex-direction: column;
             top: 0;
-            height: fit-content;
-            background: rgba(205, 205, 205, 0.416);
+            height: 13rem;
+            background: rgba(205, 205, 205, 0.116);
             box-shadow: 0 1em 1em rgba(0, 0, 0, 0.3);
         }
             .NavLeft {
-                padding: 1rem 1.5rem;
-                max-width: 210px;
+                padding: 0.5rem 1.5rem;
             }
+            .NavLeft a {
+                display: flex;
+                text-align: center;
+                justify-content: flex-start;
+                align-items: center;
+                text-decoration: none;
+            }
+                .NavLeftImage {
+                    display: block;
+                    padding-right: 0.2em;
+                }
                 .NavLeftTitleOne {
                     padding: 0;
                     font-size: 1rem;
                     font-weight: 900;
-                    text-decoration: none;
+                    max-width: 210px;
+                    color: rgb(57, 16, 123);
                 }
                 .NavLeftTitleTwo {
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    padding: 0 0 0.5em 0;
                     font-size: 0.8rem;
                     font-weight: 600;
-                    color: #ffffff;
+                    color: black;
+                    margin-top: -0.5rem;
                 }
+                .NavLeftTitleTwo  img { padding-right: 1em;}
+                .NavLeftTitleTwo  span { font-style: italic;}
                 
             .NavRightTrigger {
                 display: block;
                 margin: 0;
-                padding: 1rem 1.5rem;
+                padding: 0rem 1.5rem 1rem 1.5rem;
                 background: transparent;
                 border: none;
                 appearance: none;
@@ -152,17 +169,18 @@ body {
                     height: 2rem;
                 }
             .NavRight {
-                
+                display: none;
                 position: absolute;
-                top: 12.6rem;
+                top: 13rem;
                 right: 0;
                 bottom: 0;
                 left: 0;
                 height: calc(100vh - 15rem);
-                background: #eee;
+                background: #b0b0b05d;
                 padding: 1rem 0;
+                overflow-y: auto;
             }
-            .NavRightTrigger:active + .NavRight, .NavRightTrigger:focus + .NavRight { display: block;}
+            .NavRight.Active { display: block;}
                 .NavRightList {
                     display: block;
                     padding: 0;
@@ -175,13 +193,14 @@ body {
                             display: block;
                             padding: 0.5em 1em;
                             background: transparent;
-                            font-size: 1em;
-                            font-weight: 700;
+                            font-size: 0.9em;
+                            font-weight: 900;
+                            color: black;
                             text-decoration: none;
                         }
                         .NavRightListItemLink:hover {
-                            color: rgb(255, 190, 152);
-                            background: rgb(255, 255, 255); 
+                            color: rgb(85, 0, 147);
+                            background: rgba(255, 255, 255, 0.304); 
                         }
                         .NavRightSubList {
                             display: block;
@@ -194,8 +213,15 @@ body {
                                 .NavRightSubListItemLink {
                                     display: block;
                                     padding: 0.75em 1.5em;
+                                    font-size: 0.8em;
+                                    font-weight: 600;
                                     background: transparent;
                                     text-decoration: none;
+                                    color: black;
+                                }
+                                .NavRightSubListItemLink:hover {
+                                    color:  rgb(85, 0, 147);
+                                    background: rgba(255, 255, 255, 0.304); 
                                 }
 
     .MaterialsMain {
