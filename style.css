@@ -121,9 +121,11 @@ body {
             background: rgba(205, 205, 205, 0.116);
             box-shadow: 0 1em 1em rgba(0, 0, 0, 0.3);
         }
+        @media (min-width: 400px) { .MaterialsHeaderNav { flex-direction: row; justify-content: space-between; height: 9rem;}}
             .NavLeft {
                 padding: 0.5rem 1.5rem;
             }
+            @media (min-width: 400px) { .NavLeft { padding-left: 2rem;} }
             .NavLeft a {
                 display: flex;
                 text-align: center;
@@ -162,7 +164,9 @@ body {
                 background: transparent;
                 border: none;
                 appearance: none;
+                cursor: pointer;
             }
+            @media (min-width: 768px) { .NavRightTrigger { display: none;} }
                 .NavRightTriggerImage {
                     display: block;
                     width: 2rem;
@@ -180,12 +184,16 @@ body {
                 padding: 1rem 0;
                 overflow-y: auto;
             }
-            .NavRight.Active { display: block;}
+            @media (min-width: 400px) { .NavRight { margin-top: -4rem;} }
+            @media (min-width: 768px) { .NavRight { display: block; margin-top: -11rem; margin-right: 2rem; height: initial; padding: 0; bottom: initial; left: initial; overflow-y: initial; background: transparent;} }
+            
+            .NavRight.Active { display: block; }
                 .NavRightList {
                     display: block;
                     padding: 0;
                     margin: 0;
                 }
+                @media (min-width: 768px) { .NavRightList { display: flex; } }
                     .NavRightListItem {
                         display: block;
                     }
@@ -202,14 +210,17 @@ body {
                             color: rgb(85, 0, 147);
                             background: rgba(255, 255, 255, 0.304); 
                         }
+                        @media (min-width: 768px) { .NavRightListItemLink:hover { background: transparent; } }
                         .NavRightSubList {
                             display: block;
                             padding: 0;
                             margin: 0;
                         }
+                        @media (min-width: 768px) { .NavRightListItemLink:active + .NavRightSubListItem, .NavRightListItemLink:focus + .NavRightSubListItem  { display: block;}}
                             .NavRightSubListItem {
                                 display: block;
                             }
+                            @media (min-width: 768px) { .NavRightSubListItem { display: none; }}
                                 .NavRightSubListItemLink {
                                     display: block;
                                     padding: 0.75em 1.5em;
