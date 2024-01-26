@@ -216,11 +216,12 @@ body {
                             padding: 0;
                             margin: 0;
                         }
-                        @media (min-width: 768px) { .NavRightListItemLink:active + .NavRightSubListItem, .NavRightListItemLink:focus + .NavRightSubListItem  { display: block;}}
+                        @media (min-width: 768px) { .NavRightSubList { display: none; }}
+                        .NavRightListItemLink:active + .NavRightSubList, .NavRightListItemLink:focus + .NavRightSubList {display: block; background: rgba(255, 255, 255, 0.338);  }
                             .NavRightSubListItem {
                                 display: block;
                             }
-                            @media (min-width: 768px) { .NavRightSubListItem { display: none; }}
+                            
                                 .NavRightSubListItemLink {
                                     display: block;
                                     padding: 0.75em 1.5em;
