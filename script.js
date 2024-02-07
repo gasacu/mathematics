@@ -22,3 +22,15 @@ document.querySelectorAll('.NavRightListItemLink').forEach(item => {
         }
     });
 });
+
+document.addEventListener('click', function(event) {
+    var navRight = document.querySelector('.NavRight');
+    var clickedInsideNavRight = navRight.contains(event.target);
+
+    if (!clickedInsideNavRight) {
+        //Clicked outside .NavRight, so hide all sublists
+        document.querySelectorAll('.NavRightSubList').forEach(sub => {
+            sub.classList.remove('active');
+        });
+    }
+});
