@@ -241,9 +241,10 @@ body {
         display: block;
         background: black url(images/materials-bg.jpg) center center no-repeat;
         background-size: cover;
-        min-height: 75vh;
+        height: 84.3vh;
         opacity: 0.8;
     }
+    @media (min-width: 400px) { .MaterialsMain { height: 81.7vh; }}
         .MaterialsMainTitle {
             text-align: center;
             font-size: 2rem;
@@ -264,6 +265,6 @@ body {
             
         }
 
-
+/* LECTURES Page */
 
 
