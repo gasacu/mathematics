@@ -239,7 +239,7 @@ body {
 
     .MaterialsMain {
         display: block;
-        background: black url(/images/materials-bg.jpg) center center no-repeat;
+        background: black url(images/materials-bg.jpg) center center no-repeat;
         background-size: cover;
         min-height: 75vh;
         opacity: 0.8;
