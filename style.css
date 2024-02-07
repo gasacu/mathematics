@@ -180,8 +180,8 @@ body {
                 right: 0;
                 bottom: 0;
                 left: 0;
-                height: calc(100vh - 15rem);
-                background: #b0b0b05d;
+                height: calc(100vh - 16.5rem);
+                background: rgba(165, 120, 89, 0.9);
                 padding: 1rem 0;
                 overflow-y: auto;
             }
@@ -205,24 +205,24 @@ body {
                             font-size: 0.9em;
                             font-weight: 900;
                             color: black;
-                            text-decoration: none;
+                            
                         }
-                        .NavRightListItemLink:hover {
+                        .NavRightListItemLink:hover, .NavRightListItemLink:active, .NavRightListItemLink:focus {
                             color: rgb(85, 0, 147);
-                            background: rgba(255, 255, 255, 0.304); 
                         }
-                        @media (min-width: 768px) { .NavRightListItemLink:hover { background: transparent; } }
                         .NavRightSubList {
                             display: block;
                             padding: 0;
                             margin: 0;
                         }
-                        @media (min-width: 768px) { .NavRightSubList { display: none; }}
-                        .NavRightListItemLink:active + .NavRightSubList, .NavRightListItemLink:focus + .NavRightSubList {display: block; background: rgba(255, 255, 255, 0.338);  }
+                        @media (min-width: 768px) { .NavRightSubList { display: none; }}      
+                        .NavRightSubList.active {
+                            display: block;
+                            background: rgba(165, 120, 89, 0.9);
+                        }    
                             .NavRightSubListItem {
                                 display: block;
                             }
-                            
                                 .NavRightSubListItemLink {
                                     display: block;
                                     padding: 0.75em 1.5em;
@@ -234,7 +234,7 @@ body {
                                 }
                                 .NavRightSubListItemLink:hover {
                                     color:  rgb(85, 0, 147);
-                                    background: rgba(255, 255, 255, 0.304); 
+                                    background: rgba(255, 255, 255, 0.098); 
                                 }
 
     .MaterialsMain {
@@ -247,6 +247,7 @@ body {
         .MaterialsMainTitle {
             text-align: center;
             font-size: 2rem;
+            min-width: 13rem;
             color: rgb(0, 0, 0);
             background-color: rgba(240, 248, 255, 0.491);
             padding: 0.5rem;
