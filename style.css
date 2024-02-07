@@ -118,8 +118,9 @@ body {
             flex-direction: column;
             top: 0;
             height: 13rem;
-            background: rgba(205, 205, 205, 0.116);
+            background: rgba(159, 115, 70, 0.747);
             box-shadow: 0 1em 1em rgba(0, 0, 0, 0.3);
+            z-index: 1;
         }
         @media (min-width: 400px) { .MaterialsHeaderNav { flex-direction: row; justify-content: space-between; height: 9rem;}}
             .NavLeft {
@@ -237,13 +238,22 @@ body {
                                 }
 
     .MaterialsMain {
-
+        display: block;
+        background: black url(/images/materials-bg.jpg) center center no-repeat;
+        background-size: cover;
+        min-height: 75vh;
+        opacity: 0.8;
     }
         .MaterialsMainTitle {
-                
-        }
-        .MaterialsMainImage {
-        
+            text-align: center;
+            font-size: 2rem;
+            color: rgb(0, 0, 0);
+            background-color: rgba(240, 248, 255, 0.491);
+            padding: 0.5rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
     .MaterialsFooter {
