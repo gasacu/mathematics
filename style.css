@@ -118,8 +118,8 @@ body {
             flex-direction: column;
             top: 0;
             height: 13rem;
-            background: rgba(159, 115, 70, 0.747);
-            box-shadow: 0 1em 1em rgba(0, 0, 0, 0.3);
+            background: rgba(165, 119, 89, 0.977);
+            box-shadow: 0 1em 1em rgba(30, 30, 30, 0.9);
             z-index: 1;
         }
         @media (min-width: 400px) { .MaterialsHeaderNav { flex-direction: row; justify-content: space-between; height: 9rem;}}
@@ -194,18 +194,24 @@ body {
                     padding: 0;
                     margin: 0;
                 }
-                @media (min-width: 768px) { .NavRightList { display: flex; } }
+                @media (min-width: 768px) { .NavRightList { display: flex; justify-content: flex-end; flex-wrap: wrap; max-width: 400px;} }
+                @media (min-width: 1200px) { .NavRightList { max-width: 700px; } }
                     .NavRightListItem {
                         display: block;
                     }
                         .NavRightListItemLink {
-                            display: block;
-                            padding: 0.5em 1em;
+                            display: inherit;
+                            position: relative;
+                            padding: 0 1em;
+                            margin: 0.5em;
                             background: transparent;
+                            text-decoration: none;
                             font-size: 0.9em;
                             font-weight: 900;
                             color: black;
-                            
+                            width: fit-content;
+                            border-radius: 20px;
+                            box-shadow: rgba(3, 3, 3, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(33, 10, 58, 0.35) 0px -2px 6px 0px inset;
                         }
                         .NavRightListItemLink:hover, .NavRightListItemLink:active, .NavRightListItemLink:focus {
                             color: rgb(85, 0, 147);
@@ -213,12 +219,14 @@ body {
                         .NavRightSubList {
                             display: block;
                             padding: 0;
-                            margin: 0;
+                            margin: 0 0 2em;
                         }
                         @media (min-width: 768px) { .NavRightSubList { display: none; }}      
                         .NavRightSubList.active {
                             display: block;
+                            border-radius: 5px;
                             background: rgba(165, 120, 89, 0.9);
+                            box-shadow: rgba(60, 64, 67, 0.3) 1px 1px 2px 0px, rgba(60, 64, 67, 0.15) 1px 2px 6px 2px;
                         }    
                             .NavRightSubListItem {
                                 display: block;
@@ -231,6 +239,7 @@ body {
                                     background: transparent;
                                     text-decoration: none;
                                     color: black;
+                                    border-bottom: 1px solid #00000017;
                                 }
                                 .NavRightSubListItemLink:hover {
                                     color:  rgb(85, 0, 147);
@@ -241,10 +250,14 @@ body {
         display: block;
         background: black url(images/materials-bg.jpg) center center no-repeat;
         background-size: cover;
-        height: 84.3vh;
+        height: 100%;
+        width: 100%;
         opacity: 0.8;
+        position: absolute;
+        top: 0;
+        bottom: 0;
     }
-    @media (min-width: 400px) { .MaterialsMain { height: 81.7vh; }}
+    
         .MaterialsMainTitle {
             text-align: center;
             font-size: 2rem;
@@ -256,6 +269,8 @@ body {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
         }
 
     .MaterialsFooter {
