@@ -14,7 +14,7 @@ body {
     color: rgb(255, 255, 255);
 }
 
-/*MAIN Page*/
+/*INDEX Page*/
     .MainContainer {
         
     }
@@ -118,7 +118,7 @@ body {
             flex-direction: column;
             top: 0;
             height: 13rem;
-            background: rgba(165, 119, 89, 0.977);
+            background: rgba(74, 74, 74, 0.922);
             box-shadow: 0 1em 1em rgba(30, 30, 30, 0.9);
             z-index: 1;
         }
@@ -143,7 +143,8 @@ body {
                     font-size: 1rem;
                     font-weight: 900;
                     max-width: 210px;
-                    color: rgb(57, 16, 123);
+                    color: peachpuff;
+                    
                 }
                 .NavLeftTitleTwo {
                     display: flex;
@@ -180,18 +181,19 @@ body {
                 right: 0;
                 bottom: 0;
                 left: 0;
-                height: calc(100vh - 16.5rem);
-                background: rgba(165, 120, 89, 0.9);
-                padding: 1rem 0;
+                height: calc(100vh - 159px);
+                background: rgba(107, 107, 107, 0.909);
+                padding: 1rem 0 0 0;
+                margin: 0;
                 overflow-y: auto;
             }
-            @media (min-width: 400px) { .NavRight { margin-top: -4rem;} }
+            @media (min-width: 400px) { .NavRight { margin-top: -4.1rem;} }
             @media (min-width: 768px) { .NavRight { display: block; margin-top: -11rem; margin-right: 2rem; height: initial; padding: 0; bottom: initial; left: initial; overflow-y: initial; background: transparent;} }
             
             .NavRight.Active { display: block; }
                 .NavRightList {
                     display: block;
-                    padding: 0;
+                    padding: 0 0.5em;
                     margin: 0;
                 }
                 @media (min-width: 768px) { .NavRightList { display: flex; justify-content: flex-end; flex-wrap: wrap; max-width: 400px;} }
@@ -211,21 +213,22 @@ body {
                             color: black;
                             width: fit-content;
                             border-radius: 20px;
-                            box-shadow: rgba(3, 3, 3, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(33, 10, 58, 0.35) 0px -2px 6px 0px inset;
+                            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(255, 218, 185, 0.40) 0px 2px 6px 2px;
                         }
-                        .NavRightListItemLink:hover, .NavRightListItemLink:active, .NavRightListItemLink:focus {
-                            color: rgb(85, 0, 147);
+                        .NavRightListItemLink:hover, .NavRightListItemLink:focus {
+                            color: rgb(255, 218, 185);
+                            background: rgba(76, 76, 76, 0.171); 
                         }
                         .NavRightSubList {
                             display: block;
                             padding: 0;
                             margin: 0 0 2em;
                         }
-                        @media (min-width: 768px) { .NavRightSubList { display: none; }}      
+                        @media (min-width: 768px) { .NavRightSubList { display: none; position: absolute; z-index: 2; width: 10rem; background: rgba(98, 98, 98, 0.842);}}      
                         .NavRightSubList.active {
                             display: block;
                             border-radius: 5px;
-                            background: rgba(165, 120, 89, 0.9);
+                            margin-left: 0.5em;
                             box-shadow: rgba(60, 64, 67, 0.3) 1px 1px 2px 0px, rgba(60, 64, 67, 0.15) 1px 2px 6px 2px;
                         }    
                             .NavRightSubListItem {
@@ -242,17 +245,17 @@ body {
                                     border-bottom: 1px solid #00000017;
                                 }
                                 .NavRightSubListItemLink:hover {
-                                    color:  rgb(85, 0, 147);
-                                    background: rgba(255, 255, 255, 0.098); 
+                                    color:  peachpuff;
+                                    background: rgba(76, 76, 76, 0.315); 
                                 }
 
     .MaterialsMain {
         display: block;
-        background: black url(images/materials-bg.jpg) center center no-repeat;
+        background: black url(images/problems-bg.jpg) center center no-repeat;
         background-size: cover;
         height: 100%;
         width: 100%;
-        opacity: 0.8;
+        opacity: 0.9;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -270,7 +273,7 @@ body {
             left: 50%;
             transform: translate(-50%, -50%);
             border-radius: 20px;
-            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
         }
 
     .MaterialsFooter {
@@ -280,6 +283,7 @@ body {
             
         }
 
+/* PROBLEMS Page */
+
+
 /* LECTURES Page */
-
-
