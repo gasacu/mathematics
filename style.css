@@ -241,8 +241,8 @@ body {
                                     font-weight: 600;
                                     background: transparent;
                                     text-decoration: none;
-                                    color: black;
-                                    border-bottom: 1px solid #00000017;
+                                    color: rgba(0, 0, 0, 0.87);
+                                    border-bottom: 1px solid rgba(0, 0, 0, 0.126);
                                 }
                                 .NavRightSubListItemLink:hover {
                                     color:  peachpuff;
